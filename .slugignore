@@ -3,7 +3,4 @@
 *.map
 /test
 /spec
-/client-development-fallback
-/client-development
-/edge-server-development
-/server-development
+/cache
