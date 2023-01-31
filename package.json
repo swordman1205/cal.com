@@ -45,6 +45,7 @@
     "env-check:common": "dotenv-checker --schema .env.example --env .env",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "heroku-postbuild": "turbo run @calcom/web#build",
+    "heroku-cleanup": "rm -rf apps/web/.next/cache && find node_modules/@next -depth -maxdepth 1 -type d -name 'swc*' -exec rm -rf {} \\; -prune #Remove cache and SWC binaries to reduce heroku slug size",
     "lint:fix": "turbo run lint:fix",
     "lint:report": "turbo run lint:report",
     "lint": "turbo run lint",
