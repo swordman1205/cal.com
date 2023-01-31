@@ -98,6 +98,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: "standalone",
   webpack: (config) => {
     config.plugins.push(
       new CopyWebpackPlugin({
